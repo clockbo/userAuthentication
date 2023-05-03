@@ -1,0 +1,26 @@
+
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+<header class="header">
+    <nav class="nav">
+      <a href="#" class="nav_logo">User Autentication</a>
+      <button class="button" id="form-open">Login</button>
+    </nav>
+  </header>
+  <!-- Home -->
+  <section class="home">
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+      <!-- Login From -->
+      <div class="form login_form">
+        <%-include('signin');%>
+      </div>
+
+      <!-- Signup From -->
+      <div class="form signup_form">
+        <%-include('signup');%>
+      </div>
+    </div>
+  </section>
+
+  <script src="/js/script.js"></script>

@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/forget.css" />
+<%if(locals.user) {%>
+<header>
+  <h1 style="cursor: pointer"><a href="/profile"><%=locals.user.email%></a></h1>
+  <nav>
+    <ul>
+      <li><a href="/signout">Sign out</a></li>
+    </ul>
+  </nav>
+
+</header>
+<%}%>
+<div class="profile-card">
+  <h2>Reset password</h2>
+  <form action="/forget" method="post">
+    <input type="email" name="email" required placeholder="enter your email" id="email">
+    <input type="submit" value="reset password" id="submit"/>
+  </form>
+</div>
+

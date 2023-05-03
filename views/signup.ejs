@@ -1,0 +1,24 @@
+<form action="/create" method="post">
+    <h2>Signup</h2>
+    <div class="input_box">
+      <input type="email"  placeholder="Enter your email" name="email" required />
+      <i class="uil uil-envelope-alt email"></i>
+    </div>
+    <div class="input_box">
+      <input type="password" placeholder="Create password" name="password" required />
+      <i class="uil uil-lock password"></i>
+      <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+    <div class="input_box">
+      <input type="password" placeholder="Confirm password" name="confirm_password" required />
+      <i class="uil uil-lock password"></i>
+      <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+
+    <button class="button" type="submit">Signup Now</button>
+   
+    
+    <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+    <p style="text-align: center;">or</p>
+  </form>
+  <a href="/auth/google"> <button class="button">Signup Google</button></a>

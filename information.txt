@@ -1,0 +1,5 @@
+npm init
+npm install express
+npm install express-ejs-layout
+npm install cookie-parser
+const Flash=require('connect-flash');

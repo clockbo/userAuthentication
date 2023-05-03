@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/profile.css" />
+<header>
+  
+   <h1 style="cursor: pointer;"> <a href="/profile" ></a><%=locals.user.email%></a></h1>
+    <nav>
+      <ul>
+        <li><a href="/signout">Sign out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="profile-card">
+    <img src="/images/avtar1.png" alt="User Profile Image">
+    <ul>
+        <li><span>email:</span><%=locals.user.email%></li>
+      <li><span>password:</span><%=locals.user.password%></li>
+    </ul>
+    <a href="/forget"><button class="update_profile_button">change password</button></a>
+  </div>
