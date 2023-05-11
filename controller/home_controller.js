@@ -284,10 +284,11 @@ module.exports.resetpassword=async(req,res)=>
 {
     try
     {
+      console.log("skasjasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssss",req.body);
         const password=req.body.password;
         const user_id=req.body.user_id;
         const update={ $set:{password:password,token:' '}};
-         await   User.findOneAndUpdate(user_id, update, { returnOriginal: false }, function(err, result) {
+         await   User.findOneAndUpdate(user_id, update, { returnOriginal: true }, function(err, result) {
             if (err) {
               console.log(err);
             } else {
