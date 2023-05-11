@@ -1,3 +1,4 @@
+require('dotenv').config();
 const User = require("../models/user");
 const passport = require("passport");
 const randomSrring = require("randomstring");
@@ -43,8 +44,8 @@ module.exports.create = function (req, res) {
               secure: false,
               requireTLS: true,
               auth: {
-                user: "sagar.ktech@gmail.com",
-                pass: "ixwkmigrujlsbauv",
+                user: process.env.user,
+                pass: process.env.pass,
               },
             });
             const mailOptions = {
@@ -86,8 +87,8 @@ module.exports.create_session = function (req, res) {
         secure: false,
         requireTLS: true,
         auth: {
-          user: "sagar.ktech@gmail.com",
-          pass: "ixwkmigrujlsbauv",
+          user: process.env.user,
+          pass: process.env.pass,
         },
       });
       const mailOptions = {
@@ -124,8 +125,8 @@ module.exports.destrodesession = function (req, res, next) {
         secure: false,
         requireTLS: true,
         auth: {
-          user: "sagar.ktech@gmail.com",
-          pass: "ixwkmigrujlsbauv",
+          user: process.env.user,
+           pass: process.env.pass,
         },
       });
       const mailOptions = {
@@ -172,8 +173,8 @@ const sendResetPasswordMail = async (email, token) => {
       secure: false,
       requireTLS: true,
       auth: {
-        user: "sagar.ktech@gmail.com",
-        pass: "ixwkmigrujlsbauv",
+        user: process.env.user,
+        pass: process.env.pass,
       },
     });
     const mailOptions = {

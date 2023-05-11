@@ -1,5 +1,6 @@
+require('dotenv').config();
 const mongose=require('mongoose');
-mongose.connect(`mongodb://0.0.0.0/backenduserauthentication1231456`);
+mongose.connect(process.env.MONGI_URI);
 const db=mongose.connection;
 db.on('error',console.error.bind(console,"errror conected to db"));
 db.once('open',function()
