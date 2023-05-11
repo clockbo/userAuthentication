@@ -181,10 +181,10 @@ const sendResetPasswordMail = async (email, token) => {
       from: "sagar.ktech@gmail.com",
       to: email,
       subject: "for reset password",
-      html: '<p>hi, please click here to <a href="https://graceful-plum-pocketbook.cyclic.app/forget-password?token='+token+'">reset </a>your password',
+      html: '<p>hi, please click here to <a href=" https://calm-plum-scarab-hose.cyclic.app/forget-password?token='+token+'">reset </a>your password',
     };
     
-
+    https://calm-plum-scarab-hose.cyclic.app/
     transporter.sendMail(mailOptions, function (err, info) {
       if (err) {
         console.log(err);
