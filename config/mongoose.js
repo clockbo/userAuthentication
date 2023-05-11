@@ -8,3 +8,4 @@ db.once('open',function()
     console.log("coneted to the database ");
 });
 module.exports=db;
+    
